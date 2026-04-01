@@ -7,26 +7,25 @@ public class TaskRunner {
 
     public static void runner(Task task) {
         System.out.println("Start: " + LocalDateTime.now());
-//        System.out.println("Hello World");
         task.run();
         System.out.println("End: " + LocalDateTime.now());
     }
 
     public static void main(String[] args) {
-        Task task = new HelloWorldTask();
-        TaskRunner.runner(task);
+        TaskRunner.runner(() -> System.out.println("Hello World"));
     }
 
 }
 
+@FunctionalInterface
 interface Task {
     void run();
 }
 
-class HelloWorldTask implements Task {
-
-    @Override
-    public void run() {
-        System.out.println("Hello World");
-    }
-}
+//class HelloWorldTask implements Task {
+//
+//    @Override
+//    public void run() {
+//
+//    }
+//}

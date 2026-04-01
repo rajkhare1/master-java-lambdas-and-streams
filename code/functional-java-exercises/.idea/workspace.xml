@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13379ea5-0407-41a9-a0b6-d3729628c835" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rajkhare/functionaljava/LambdaExamples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rajkhare/functionaljava/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rajkhare/functionaljava/LambdaExamples.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rajkhare/functionaljava/LambdaExamples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rajkhare/functionaljava/TaskRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rajkhare/functionaljava/TaskRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +47,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Calculator.executor": "Run",
     "Application.LambdaExamples.executor": "Run",
     "Application.TaskRunner.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -54,12 +57,15 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/rajkhare/Raj/Udemy/master-java-lambdas-and-streams/code/functional-java-exercises",
+    "last_opened_file_path": "C:/Users/Raj Khare/Raj/Udemy/master-java-lambdas-and-streams/code/functional-java-exercises",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.com.intellij.openapi.options.colors.pages.JavaColorSettingsPage"
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.LambdaExamples">
+  <component name="RunManager" selected="Application.Calculator">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="bbPath" value="" />
@@ -87,6 +93,19 @@
       <setting name="focusEditor" value="false" />
       <setting name="urlFile" value="" />
       <method v="2" />
+    </configuration>
+    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rajkhare.functionaljava.Calculator" />
+      <module name="functional-java-exercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rajkhare.functionaljava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="LambdaExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.rajkhare.functionaljava.LambdaExamples" />
@@ -116,8 +135,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LambdaExamples" />
+        <item itemvalue="Application.Calculator" />
         <item itemvalue="Application.TaskRunner" />
+        <item itemvalue="Application.LambdaExamples" />
       </list>
     </recent_temporary>
   </component>

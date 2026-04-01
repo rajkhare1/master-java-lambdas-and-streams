@@ -9,9 +9,10 @@ public class LambdaExamples {
         System.out.println("result = " + result);
 
         MathOperation newLambda = num -> num * 2 + 126;
+//        AnotherOperation newLambda = num -> num * 2 + 126;
         System.out.println(newLambda);
 
-        newLambda = increment;
+        newLambda = increment;// will not work if different interface, does not depend on SAM signature
         System.out.println(newLambda.operation(20));
 
     }
@@ -19,5 +20,9 @@ public class LambdaExamples {
 }
 
 interface MathOperation {
+    int operation(int x);
+}
+
+interface AnotherOperation {
     int operation(int x);
 }
