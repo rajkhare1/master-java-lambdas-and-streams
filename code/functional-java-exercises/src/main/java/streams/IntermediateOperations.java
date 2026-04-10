@@ -1,5 +1,6 @@
 package streams;
 
+import java.util.List;
 import java.util.stream.Stream;
 
 public class IntermediateOperations {
@@ -17,6 +18,22 @@ public class IntermediateOperations {
         Stream<Integer> evenStream = numbers.filter(num -> num % 2 == 0);
         Stream<Integer> first2evens = evenStream.limit(2);
         first2evens.forEach(System.out::println);
+
+        System.out.println("-------------------------------------------");
+
+        numbers = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        numbers.limit(2).filter(x -> x % 2 == 0).forEach(System.out::println);
+
+        System.out.println("-------------------------------------------");
+
+        Stream<String> names = Stream.of("apple", "banana", "mango", "strawberry");
+        List<String> namesProcessed = names
+                .map(String::toUpperCase)
+                .peek(str -> System.out.println("Peek result: " + str))
+                .filter(name -> name.length() < 6)
+//                .forEach(System.out::println);
+                .toList();
+        System.out.println(namesProcessed);
 
     }
 
