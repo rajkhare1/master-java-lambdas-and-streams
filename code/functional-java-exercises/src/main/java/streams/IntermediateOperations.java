@@ -35,6 +35,14 @@ public class IntermediateOperations {
                 .toList();
         System.out.println(namesProcessed);
 
+        System.out.println("-------------------------------------------");
+
+        numbers = Stream.of(1, 2, 9, 8, 3, 6, 4, 3, 4, 5, 6, 7, 8, 9, 10);
+        numbers
+                .distinct()
+                .sorted()
+                .forEach(System.out::println);
+
     }
 
 }
